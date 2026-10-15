@@ -97,7 +97,7 @@ export const ProductDetailClient: React.FC<ProductDetailClientProps> = ({
   }[product.theme.tint];
 
   return (
-    <div className="pb-24">
+    <div className="pb-32 sm:pb-24">
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-4">
         <nav className="flex items-center gap-2 text-xs text-ink-muted">

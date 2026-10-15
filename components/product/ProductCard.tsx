@@ -134,7 +134,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
                   e.preventDefault();
                   setSelectedPackIndex(idx);
                 }}
-                className={`text-[11px] px-2.5 py-1 rounded-full border transition-all ${
+                className={`text-[11px] px-3 py-1.5 rounded-full border transition-all min-h-[36px] inline-flex items-center ${
                   selectedPackIndex === idx
                     ? "bg-sage/15 border-sage text-sage-dark font-medium"
                     : "bg-white/60 border-sage/20 text-ink-muted hover:border-sage/40"

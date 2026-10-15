@@ -94,7 +94,7 @@ export const MiniCart: React.FC = () => {
               </div>
               <button
                 onClick={() => setOpen(false)}
-                className="p-2 rounded-full text-ink-muted hover:text-ink hover:bg-sage/10 transition-colors"
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-ink-muted hover:text-ink hover:bg-sage/10 transition-colors"
                 aria-label="Close cart"
               >
                 <X className="w-5 h-5" />

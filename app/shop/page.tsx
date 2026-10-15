@@ -112,17 +112,51 @@ export default function ShopPage() {
           ))}
         </div>
 
-        {/* Mobile Filter Trigger */}
-        <button
-          onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
-          className="lg:hidden flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-full border border-sage/20 bg-ivory text-ink w-full justify-center"
-        >
-          <SlidersHorizontal className="w-4 h-4" />
-          <span>Filters & Sort</span>
-          {hasActiveFilters && (
-            <span className="w-2 h-2 rounded-full bg-sage" />
-          )}
-        </button>
+        {/* Mobile Filter Trigger & Quick Swiper */}
+        <div className="lg:hidden w-full space-y-2.5">
+          <button
+            onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
+            className="flex items-center gap-2 text-xs font-semibold px-4 py-2.5 rounded-full border border-sage/20 bg-ivory text-ink w-full justify-center min-h-[44px] shadow-sm"
+          >
+            <SlidersHorizontal className="w-4 h-4 text-sage" />
+            <span>Filters & Sort</span>
+            {hasActiveFilters && (
+              <span className="w-2 h-2 rounded-full bg-sage" />
+            )}
+          </button>
+
+          {/* Quick Category Swiper */}
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar w-full py-1">
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className={`text-xs px-3.5 py-1.5 rounded-full transition-all whitespace-nowrap min-h-[36px] ${
+                selectedCategory === "all"
+                  ? "bg-sage text-ivory font-semibold shadow-subtle"
+                  : "bg-white text-ink border border-sage/20"
+              }`}
+            >
+              All Formulations
+            </button>
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat.slug}
+                onClick={() => setSelectedCategory(cat.slug)}
+                className={`text-xs px-3.5 py-1.5 rounded-full transition-all whitespace-nowrap flex items-center gap-1 min-h-[36px] ${
+                  selectedCategory === cat.slug
+                    ? "bg-sage text-ivory font-semibold shadow-subtle"
+                    : "bg-white text-ink border border-sage/20"
+                }`}
+              >
+                <span>{cat.shortTitle}</span>
+                {!cat.launched && (
+                  <span className="text-[9px] bg-amber-100 text-amber-800 px-1 py-0.2 rounded font-medium">
+                    Soon
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {/* Desktop Secondary Filters & Sort Dropdowns */}
         <div className="hidden lg:flex items-center gap-3">

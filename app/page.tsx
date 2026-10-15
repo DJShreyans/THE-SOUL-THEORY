@@ -358,68 +358,72 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="p-5 rounded-3xl bg-lavender/50 border border-lavender-dark/30 text-center space-y-3">
-            <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-white/60">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <div className="p-3.5 sm:p-5 rounded-3xl bg-lavender/50 border border-lavender-dark/30 text-center space-y-2 sm:space-y-3">
+            <div className="relative w-full h-32 sm:h-44 rounded-2xl overflow-hidden bg-white/60">
               <Image
                 src="/images/products/creatine-blueberry-cloud.jpg"
                 alt="Blueberry Cloud"
                 fill
                 className="object-cover hover:scale-105 transition-transform"
+                sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-sage-dark">Creatine</span>
-              <h4 className="font-serif text-base text-ink font-normal">Blueberry Cloud</h4>
-              <p className="text-xs text-ink-muted mt-0.5">Wild blueberries & lavender botanicals</p>
+              <span className="text-[9px] sm:text-[10px] uppercase font-bold text-sage-dark block">Creatine</span>
+              <h4 className="font-serif text-sm sm:text-base text-ink font-normal truncate">Blueberry Cloud</h4>
+              <p className="text-[11px] sm:text-xs text-ink-muted mt-0.5 line-clamp-1">Wild blueberries & lavender</p>
             </div>
           </div>
 
-          <div className="p-5 rounded-3xl bg-soft-coral/50 border border-soft-coral-dark/30 text-center space-y-3">
-            <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-white/60">
+          <div className="p-3.5 sm:p-5 rounded-3xl bg-soft-coral/50 border border-soft-coral-dark/30 text-center space-y-2 sm:space-y-3">
+            <div className="relative w-full h-32 sm:h-44 rounded-2xl overflow-hidden bg-white/60">
               <Image
                 src="/images/products/creatine-lychee-rose.jpg"
                 alt="Lychee Rose"
                 fill
                 className="object-cover hover:scale-105 transition-transform"
+                sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-sage-dark">Creatine</span>
-              <h4 className="font-serif text-base text-ink font-normal">Lychee Rose</h4>
-              <p className="text-xs text-ink-muted mt-0.5">Tropical lychee & Damascus rose petals</p>
+              <span className="text-[9px] sm:text-[10px] uppercase font-bold text-sage-dark block">Creatine</span>
+              <h4 className="font-serif text-sm sm:text-base text-ink font-normal truncate">Lychee Rose</h4>
+              <p className="text-[11px] sm:text-xs text-ink-muted mt-0.5 line-clamp-1">Tropical lychee & Damascus rose</p>
             </div>
           </div>
 
-          <div className="p-5 rounded-3xl bg-seafoam/50 border border-seafoam-dark/30 text-center space-y-3">
-            <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-white/60">
+          <div className="p-3.5 sm:p-5 rounded-3xl bg-seafoam/50 border border-seafoam-dark/30 text-center space-y-2 sm:space-y-3">
+            <div className="relative w-full h-32 sm:h-44 rounded-2xl overflow-hidden bg-white/60">
               <Image
                 src="/images/products/hydration-watermelon-lime.jpg"
                 alt="Watermelon Lime"
                 fill
                 className="object-cover hover:scale-105 transition-transform"
+                sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-sage-dark">Hydration</span>
-              <h4 className="font-serif text-base text-ink font-normal">Watermelon Lime</h4>
-              <p className="text-xs text-ink-muted mt-0.5">Crisp melon with key lime splash</p>
+              <span className="text-[9px] sm:text-[10px] uppercase font-bold text-sage-dark block">Hydration</span>
+              <h4 className="font-serif text-sm sm:text-base text-ink font-normal truncate">Watermelon Lime</h4>
+              <p className="text-[11px] sm:text-xs text-ink-muted mt-0.5 line-clamp-1">Crisp melon with key lime</p>
             </div>
           </div>
 
-          <div className="p-5 rounded-3xl bg-powder-blue/50 border border-powder-blue-dark/30 text-center space-y-3">
-            <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-white/60">
+          <div className="p-3.5 sm:p-5 rounded-3xl bg-powder-blue/50 border border-powder-blue-dark/30 text-center space-y-2 sm:space-y-3">
+            <div className="relative w-full h-32 sm:h-44 rounded-2xl overflow-hidden bg-white/60">
               <Image
                 src="/images/products/hydration-blue-lagoon-citrus.jpg"
                 alt="Blue Lagoon Citrus"
                 fill
                 className="object-cover hover:scale-105 transition-transform"
+                sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-sage-dark">Hydration</span>
-              <h4 className="font-serif text-base text-ink font-normal">Blue Lagoon Citrus</h4>
-              <p className="text-xs text-ink-muted mt-0.5">Meyer lemon, lime & blue spirulina</p>
+              <span className="text-[9px] sm:text-[10px] uppercase font-bold text-sage-dark block">Hydration</span>
+              <h4 className="font-serif text-sm sm:text-base text-ink font-normal truncate">Blue Lagoon Citrus</h4>
+              <p className="text-[11px] sm:text-xs text-ink-muted mt-0.5 line-clamp-1">Meyer lemon & blue spirulina</p>
             </div>
           </div>
         </div>

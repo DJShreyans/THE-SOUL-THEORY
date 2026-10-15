@@ -18,7 +18,7 @@ export const WhatsAppFloat: React.FC = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center group"
+      className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center group"
       aria-label="Chat with SOUL THEORY Concierge on WhatsApp"
     >
       <MessageCircle className="w-6 h-6 fill-current" />

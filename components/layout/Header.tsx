@@ -206,11 +206,11 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Right: Actions (Search, Cart, Mobile Toggle) */}
-            <div className="flex items-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-1 sm:gap-3">
               {/* Search Button */}
               <button
                 onClick={() => setSearchModalOpen(true)}
-                className="p-2.5 rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
                 aria-label="Search products and journal"
               >
                 <Search className="w-5 h-5" />
@@ -219,12 +219,12 @@ export const Header: React.FC = () => {
               {/* Cart Drawer Trigger */}
               <button
                 onClick={toggleCart}
-                className="relative p-2.5 rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
+                className="relative min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
                 aria-label="Open Cart"
               >
                 <ShoppingBag className="w-5 h-5" />
                 {itemCount > 0 && (
-                  <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-sage text-ivory text-[10px] font-bold flex items-center justify-center animate-scale-in">
+                  <span className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-sage text-ivory text-[10px] font-bold flex items-center justify-center animate-scale-in">
                     {itemCount}
                   </span>
                 )}
@@ -233,7 +233,7 @@ export const Header: React.FC = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
+                className="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-ink hover:text-sage hover:bg-sage/10 transition-colors"
                 aria-label="Toggle mobile menu"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
