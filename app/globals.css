@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sage: #72836F;
+  --color-sage-dark: #4B5A49;
+  --color-ivory: #F5F3EC;
+  --color-lavender: #EAE6F4;
+  --color-powder-blue: #E5EEF5;
+  --color-soft-coral: #F4E2DD;
+  --color-seafoam: #DCEBE3;
+  --color-ink: #2B3229;
+}
+
+@layer base {
+  body {
+    background-color: #F5F3EC;
+    color: #2B3229;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus visible accessibility */
+  *:focus-visible {
+    outline: 2px solid #72836F;
+    outline-offset: 3px;
+  }
+
+  /* Selection style */
+  ::selection {
+    background-color: #72836F;
+    color: #F5F3EC;
+  }
+}
+
+/* Organic blob and subtle wave shapes mirroring product swoosh */
+.swoosh-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(220, 235, 227, 0.6) 0%, rgba(245, 243, 236, 0) 70%);
+}
+
+.arch-mask {
+  border-radius: 9999px 9999px 24px 24px;
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(245, 243, 236, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(114, 131, 111, 0.15);
+}
+
+/* Hide scrollbars but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
